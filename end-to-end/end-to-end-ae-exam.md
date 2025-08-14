@@ -1,4 +1,4 @@
-### End-to-End Analytics Engineering Pipeline Exam
+# End-to-End Analytics Engineering Pipeline Exam
 
 This exam is the culmination of the skills we've discussed, designed to simulate a complete project lifecycle for an analytics engineer. The goal is to build a full data pipeline, from raw data ingestion to a final dashboard for a business user.
 
