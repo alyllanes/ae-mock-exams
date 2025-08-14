@@ -6,6 +6,8 @@ This exam assesses your ability to use dbt to transform raw data into a clean, w
 
 **Objective:** Your goal is to build a dbt project that transforms this raw session data into a final `daily_sessions_mart` that can be used by business analysts.
 
+---
+
 ### Section 1: Staging Models
 The first step in any dbt project is to create clean, raw-to-staging models. These models should be a thin layer of transformation.
 
@@ -23,6 +25,8 @@ The first step in any dbt project is to create clean, raw-to-staging models. The
 - Why is it a best practice to keep staging models "thin" with minimal business logic?
 - What is the benefit of materializing this model as a view instead of a table?
 
+***
+
 ### Section 2: Core Models
 This layer contains the core business logic. We'll build a model that joins the session data with any transaction data.
 
@@ -37,6 +41,8 @@ This layer contains the core business logic. We'll build a model that joins the 
 **Questions:**
 - How does the is_purchase column help analysts?
 - Why is materializing this model as a table (instead of a view) a good choice here?
+
+***
 
 ### Section 3: Data Marts
 The final layer is the data mart, which provides aggregated data for a specific business use case.
@@ -53,6 +59,8 @@ The final layer is the data mart, which provides aggregated data for a specific 
 
 **Question:**
 Briefly describe how dbt's incremental materialization would work for this model.
+
+***
 
 ### Section 4: Data Quality & Documentation
 A key aspect of dbt is ensuring data quality and making models understandable.
