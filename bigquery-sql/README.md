@@ -1,4 +1,4 @@
-### Exercise 1: Customer Segmentation and RFM Analysis
+### [Exercise 1: Customer Segmentation and RFM Analysis](https://github.com/alyllanes/ae-mock-exams/blob/main/bigquery-sql/exercise-1.sql)
 Using the `bigquery-public-data.thelook_ecommerce` dataset:
 
 1. **Objective:** Calculate the Recency, Frequency, and Monetary (RFM) values for each customer.
