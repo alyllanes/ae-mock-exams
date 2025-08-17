@@ -9,7 +9,8 @@ Using the bigquery-public-data.thelook_ecommerce dataset:
 5. Output: Your query should return customer_id, recency, frequency, and monetary values.
 */
 
-SELECT * FROM `bigquery-public-data.thelook_ecommerce`.orders ORDER BY rand() LIMIT 10;
+-- Previewing the first 10 rows of the table
+SELECT * FROM `bigquery-public-data.thelook_ecommerce`.orders LIMIT 10;
 
 WITH customer_rfm AS (
   SELECT
