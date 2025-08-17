@@ -57,9 +57,9 @@ This exam is the culmination of the skills we've discussed, designed to simulate
 
 ***
 
-### Section 4: Dashboarding & Visualization (Looker)
+### Section 4: Dashboarding & Visualization (Power BI)
 
-**Business Problem:** The marketing team needs a dashboard in Looker to answer key questions. The final `daily_campaign_summary` table is the source for this dashboard.
+**Business Problem:** The marketing team needs a dashboard in Power BI to answer key questions. The final `daily_campaign_summary` table is the source for this dashboard.
 
 **Task:** Describe the design of a Looker dashboard to meet the following requirements:
 
