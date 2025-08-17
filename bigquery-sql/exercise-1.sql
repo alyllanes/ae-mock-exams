@@ -12,6 +12,7 @@ Using the bigquery-public-data.thelook_ecommerce dataset:
 -- Previewing the first 10 rows of the table
 SELECT * FROM `bigquery-public-data.thelook_ecommerce`.orders LIMIT 10;
 
+-- Used CTEs to provide a clear and organized query to do the task:
 WITH customer_rfm AS (
   SELECT
     orders.user_id AS customer_id, -- renamed to customer_id as specified in the output
