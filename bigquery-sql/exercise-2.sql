@@ -26,7 +26,7 @@ running_total_revenue AS (
     date,
     fullVisitorId,
     totalTransactionRevenue,
-    sum(totalTransactionRevenue) OVER (PARTITION BY fullVisitorId ORDER BY date RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS running_total_revenue -- this gets the running total of the totalTransactionRevenue; the use of the "range between unbounded preceding and current row" is used as the window frame
+    SUM(totalTransactionRevenue) OVER (PARTITION BY fullVisitorId ORDER BY date RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS running_total_revenue -- this gets the running total of the totalTransactionRevenue; the use of the "range between unbounded preceding and current row" is used as the window frame
   FROM daily_total_revenue
 )
 
