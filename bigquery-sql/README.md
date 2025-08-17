@@ -11,7 +11,7 @@ Using the `bigquery-public-data.thelook_ecommerce` dataset:
 Using the `bigquery-public-data.google_analytics_sample.ga_sessions` table:
 
 1. **Objective:** Find the running total of `totalTransactionRevenue` over time, partitioned by `fullVisitorId`.
-2. **Challenge:** The `totalTransactionRevenue` field is nested and you'll need to use `UNNEST()` to access it.
+2. **Challenge:** The `totalTransactionRevenue` field is a record or struct, and you'll need to use (.) to access a value. (ex. `totals.TransactionRevenue`) 
 3. **Task:** Write a query that shows the daily cumulative revenue for each visitor.
 4. **Output:** The result should include `date`, `fullVisitorId`, `totalTransactionRevenue`, and the `running_total_revenue`.
 
