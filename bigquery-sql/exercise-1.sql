@@ -9,19 +9,18 @@ Using the bigquery-public-data.thelook_ecommerce dataset:
 5. Output: Your query should return customer_id, recency, frequency, and monetary values.
 */
 
-select * from `bigquery-public-data.thelook_ecommerce`.orders order by rand() limit 10;
+SELECT * FROM `bigquery-public-data.thelook_ecommerce`.orders ORDER BY rand() LIMIT 10;
 
-with customer_rfm as (
-  select
-    orders.user_id as customer_id,
-    date_diff(current_date(), max(date(orders.created_at)), DAY) as recency,
-    count(distinct order_id) as frequency,
-    sum(sale_price) as monetary
-  from `bigquery-public-data`.thelook_ecommerce.orders orders
-  left join `bigquery-public-data`.thelook_ecommerce.order_items order_items using(order_id)
-  group by 1
+WITH customer_rfm AS (
+  SELECT
+    orders.user_id AS customer_id, -- renamed to customer_id as specified in the output
+    DATE_DIFF(CURRENT_DATE(), max(date(orders.created_at)), DAY) AS recency, -- (1) the created_at used a timestamp, so it was first converted to a date, (2) then the MAX() function was applied to get the most recent order date, and lastly (3) the date_diff between the most recent order date and the CURRENT_DATE() was calculated 
+    COUNT(DISTINCT order_id) AS frequency, -- since the order_items was joined, it can potentially have duplicate order IDs, so COUNT(DISTINCT order_id) was used
+    sum(sale_price) AS monetary -- from the ORDER_ITEMS table 
+  FROM `bigquery-public-data`.thelook_ecommerce.orders orders
+  LEFT JOIN `bigquery-public-data`.thelook_ecommerce.order_items order_items USING(order_id)
+  GROUP BY 1
 )
 
-select *
-from customer_rfm
-order by customer_id;
+SELECT * FROM customer_rfm
+ORDER BY customer_id;
