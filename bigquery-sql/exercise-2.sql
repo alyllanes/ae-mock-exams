@@ -21,16 +21,16 @@ WITH daily_total_revenue AS (
   GROUP BY 1, 2
 ),
 
-running_total_revenue as (
-  select
+running_total_revenue AS (
+  SELECT
     date,
     fullVisitorId,
     totalTransactionRevenue,
-    sum(totalTransactionRevenue) over (partition by fullVisitorId order by date range between unbounded preceding and current row) as running_total_revenue -- this gets the running total of the totalTransactionRevenue; the use of the "range between unbounded preceding and current row" is used as the window frame
-  from daily_total_revenue
+    sum(totalTransactionRevenue) OVER (PARTITION BY fullVisitorId ORDER BY date RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS running_total_revenue -- this gets the running total of the totalTransactionRevenue; the use of the "range between unbounded preceding and current row" is used as the window frame
+  FROM daily_total_revenue
 )
 
-select * from running_total_revenue
+SELECT * FROM running_total_revenue
 -- testing the query using one fullVisitorId, optional and can be commented out:
-where fullVisitorId = '0111624627546859050'
-order by date asc;
+WHERE fullVisitorId = '0111624627546859050'
+ORDER BY date;
