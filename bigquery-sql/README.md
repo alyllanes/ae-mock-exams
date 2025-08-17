@@ -7,7 +7,7 @@ Using the `bigquery-public-data.thelook_ecommerce` dataset:
 4. **Monetary:** Calculate the total spend for each customer.
 5. **Output:** Your query should return customer_id, recency, frequency, and monetary values.
 
-### Exercise 2: Time Series Analysis with Window Functions
+### [Exercise 2: Time Series Analysis with Window Functions](https://github.com/alyllanes/ae-mock-exams/blob/main/bigquery-sql/exercise-2.sql)
 Using the `bigquery-public-data.google_analytics_sample.ga_sessions` table:
 
 1. **Objective:** Find the running total of `totalTransactionRevenue` over time, partitioned by `fullVisitorId`.
