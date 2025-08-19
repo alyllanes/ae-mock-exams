@@ -35,7 +35,7 @@ Using the `bigquery-public-data.chicago_crime.crime` table:
     - Filter for rows where the row number is equal to 1 to get only the unique records.
 3. **Output:** The final query should return a result set containing only the distinct crime records.
 
-### Exercise 5: Handling Nested and Repeated Data
+### [Exercise 5: Handling Nested and Repeated Data](https://github.com/alyllanes/ae-mock-exams/blob/main/bigquery-sql/exercise-5.sql)
 Using the `bigquery-public-data.github_repos.sample_contents` table:
 
 1. **Objective:** Count the number of distinct programming languages used across all files in a specific GitHub repository.
