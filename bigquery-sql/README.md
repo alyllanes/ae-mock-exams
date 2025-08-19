@@ -38,13 +38,12 @@ Using the `bigquery-public-data.chicago_crime.crime` table:
 ### [Exercise 5: Handling Nested and Repeated Data](https://github.com/alyllanes/ae-mock-exams/blob/main/bigquery-sql/exercise-5.sql)
 Using the `bigquery-public-data.github_repos.sample_contents` table:
 
-1. **Objective:** Count the number of distinct programming languages used across all files in a specific GitHub repository.
+1. **Objective:** Count the number of distinct programming languages used across all files in each GitHub repository.
 2. **Task:**
-    - Filter the table for a repository of your choice (e.g., google/go-github).
-    - The content field is a `STRING` that contains nested JSON-like data. You'll need to extract the file extension (e.g., .py, .js, .go) from the path field to determine the language.
-    - Use the `UNNEST()` function to flatten the sample_contents nested array.
+    - (Optional) Filter the table for a repository of your choice (e.g., google/go-github).
+    - You'll need to extract the file extension (e.g., .py, .js, .go) from the path field to determine the language.
     - Count the number of distinct file extensions/languages.
-3. **Output:** A single row with the repository name and the count of distinct languages.
+3. **Output:** The repository name and the count of distinct languages.
 
 ### Exercise 6: Working with Arrays
 Using the `bigquery-public-data.stackoverflow.posts_questions` table:
