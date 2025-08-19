@@ -15,7 +15,7 @@ Using the `bigquery-public-data.google_analytics_sample.ga_sessions` table:
 3. **Task:** Write a query that shows the daily cumulative revenue for each visitor.
 4. **Output:** The result should include `date`, `fullVisitorId`, `totalTransactionRevenue`, and the `running_total_revenue`.
 
-### Exercise 3: Complex Joins and Aggregation
+### [Exercise 3: Complex Joins and Aggregation](https://github.com/alyllanes/ae-mock-exams/blob/main/bigquery-sql/exercise-3.sql)
 Using the `bigquery-public-data.stackoverflow` dataset, specifically the posts_questions and posts_answers tables:
 
 1. **Objective:** Find the top 10 questions (by view count) that have a "good" accepted answer. A "good" answer is defined as one with an `accepted_answer_id` and a score greater than 5.
