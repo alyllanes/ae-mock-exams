@@ -59,7 +59,7 @@ Using the `bigquery-public-data.stackoverflow.posts_questions` table:
 ### Exercise 7: Subqueries and Date Manipulation
 Using the `bigquery-public-data.google_analytics_sample.ga_sessions` table:
 
-1. **Objective:*8 Find the number of new visitors and their total revenue for each day. A "new visitor" is someone whose first-ever visit was on that specific day.
+1. **Objective:** Find the number of new visitors and their total revenue for each day. A "new visitor" is someone whose first-ever visit was on that specific day.
 2. **Task:**
     - Use a subquery or a CTE to determine the first visit date for each `fullVisitorId`.
     - Use this first visit date to identify new visitors for each day.
