@@ -39,7 +39,7 @@ SELECT * FROM row_number
 -- filters rn= 1 since the first row number would be the latest updated date for that particular case number, IUCR, and FBI Code
 WHERE rn = 1;
 
---Method 2: Using QUALIFY and ROW_NUMBER()
+-- Method 2: Using QUALIFY and ROW_NUMBER()
 SELECT * FROM `bigquery-public-data.chicago_crime.crime`
 -- instead of using a separate query to add the row numbers, QUALIFY is used to filter the results of the window function
 QUALIFY 1=ROW_NUMBER() OVER (PARTITION BY case_number, iucr, fbi_code ORDER BY updated_on DESC);
