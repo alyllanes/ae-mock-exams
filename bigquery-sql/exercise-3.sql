@@ -11,8 +11,8 @@ Using the bigquery-public-data.stackoverflow dataset, specifically the posts_que
 3. Output: Your query should return the title and view_count of the top 10 questions that meet the criteria.
 */
 
+-- Previewing the first 10 rows of the table
 SELECT * FROM `bigquery-public-data.stackoverflow.posts_questions` LIMIT 10;
-
 SELECT * FROM `bigquery-public-data.stackoverflow.posts_answers` LIMIT 10;
 
 SELECT
