@@ -45,7 +45,7 @@ Using the `bigquery-public-data.github_repos.sample_contents` table:
     - Count the number of distinct file extensions/languages.
 3. **Output:** The repository name and the count of distinct languages.
 
-### Exercise 6: Working with Arrays
+### [Exercise 6: Working with Arrays](https://github.com/alyllanes/ae-mock-exams/blob/main/bigquery-sql/exercise-6.sql)
 Using the `bigquery-public-data.stackoverflow.posts_questions` table:
 
 1. **Objective:** Find the top 5 most used tags on Stack Overflow questions in the last year.
