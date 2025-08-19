@@ -26,7 +26,7 @@ Using the `bigquery-public-data.stackoverflow` dataset, specifically the posts_q
     - Order the results by view_count in descending order and limit to 10.
 3. **Output:** Your query should return the title and view_count of the top 10 questions that meet the criteria.
 
-### Exercise 4: Data Deduplication and CTEs (Common Table Expressions)
+### [Exercise 4: Data Deduplication and CTEs (Common Table Expressions)](https://github.com/alyllanes/ae-mock-exams/blob/main/bigquery-sql/exercise-4.sql)
 Using the `bigquery-public-data.chicago_crime.crime` table:
 
 1. **Objective:** Identify and remove duplicate crime records. A record is considered a duplicate if it has the same ID and Case Number.
