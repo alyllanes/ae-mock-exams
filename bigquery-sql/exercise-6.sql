@@ -16,6 +16,7 @@ SELECT * FROM `bigquery-public-data.stackoverflow.posts_questions` LIMIT 10;
 
 -- Output
 WITH unnest_tags AS (
+  -- unnest with split is used here since the tags are formatted like this 'tag1|tag2|tag3'
   SELECT * FROM `bigquery-public-data.stackoverflow.posts_questions`, UNNEST(SPLIT(tags, '|')) AS tag
   ),
 
