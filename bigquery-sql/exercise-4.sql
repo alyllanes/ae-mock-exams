@@ -9,6 +9,7 @@ Using the bigquery-public-data.chicago_crime.crime table:
 3. Output: The final query should return a result set containing only the distinct crime records.
 */
 
+-- Previewing the first 10 rows of the table
 SELECT * FROM `bigquery-public-data.chicago_crime.crime` LIMIT 10;
 
 -- Checking for ID fields since the unique key is different for every row despite having the same case number, IUCR (Illinois Uniform Crime Reporting), and FBI Code
