@@ -66,7 +66,7 @@ Using the `bigquery-public-data.google_analytics_sample.ga_sessions` table:
     - Join the result back to the original table to sum `totalTransactionRevenue` for those new visitors.
 3. **Output:** A list with `date`, `number_of_new_visitors`, and `total_revenue_from_new_visitors`.
 
-Exercise 8: Performance and Query Optimization
+### Exercise 8: Performance and Query Optimization
 Using the `bigquery-public-data.chicago_taxi_trips.taxi_trips` table:
 
 1. **Objective:** Calculate the average trip duration for each hour of the day.
