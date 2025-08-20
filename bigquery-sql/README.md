@@ -56,7 +56,7 @@ Using the `bigquery-public-data.stackoverflow.posts_questions` table:
     - Order the results in descending order and limit to 5.
 3. **Output:** A list of the top 5 tags and their respective counts.
 
-### Exercise 7: Subqueries and Date Manipulation
+### [Exercise 7: Subqueries and Date Manipulation](https://github.com/alyllanes/analytics-engineering-portfolio/blob/main/bigquery-sql/exercise-7.sql)
 Using the `bigquery-public-data.google_analytics_sample.ga_sessions` table:
 
 1. **Objective:** Find the number of new visitors and their total revenue for each day. A "new visitor" is someone whose first-ever visit was on that specific day.
